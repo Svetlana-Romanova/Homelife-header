@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PINK - Приложение для раскрашивания серых будней</title>
+    <title>The best author's furniture for home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
@@ -13,7 +13,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-md">
           <a class="navbar-brand" href="#">
-            <img src="img/logo-HomeLife.png" width="130" height="56" alt="Logotip">
+            <img class="navbar__logo" src="img/logo-HomeLife.png" width="130" height="56" alt="Logotip">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -42,33 +42,40 @@
             </ul>
           </div>
         </nav>
-        <div class="page-header__promo">
-          <div class="row d-flex align-items-center">
-            <div class="col-6">
-              <div class="page-header__info">
-                <p class="page-header__slogan">The best <span class="page-header__text">author's</span> furniture for home</p>
-                <a class="page-header__link" href="#">More &rarr;</a>
-              </div>
+        <div class="row d-flex align-items-center page-header__promo">
+          <div class="col-6">
+            <div class="page-header__info">
+              <p class="page-header__slogan">The best <span class="page-header__text">author's</span> furniture for home</p>
+              <a class="page-header__link" href="#">More &rarr;</a>
             </div>
-            <div class="col-6">
-              <div id="carouselPromo" class="carousel slide d-flex justify-content-center align-items-center" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/photo-chair-desktop.png" class="d-block w-100" alt="Очень удобное кресло">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/photo-chair-desktop.png" class="d-block w-100" alt="Еще одно очень удобное кресло">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/photo-chair-desktop.png" class="d-block w-100" alt="Крайнее очень удобное кресло">
-                  </div>
+          </div>
+          <div class="col-6">
+            <div id="carouselPromo" class="carousel slide d-flex justify-content-center align-items-center" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <picture>
+                    <source type="image/webp" srcset="img/photo-chair@1x.webp 1x, img/photo-chair@2x.webp 2x">
+                    <img class="d-block w-100 page-header__img" src="img/photo-chair@1x.png" width="406" height="424" srcset="img/photo-chair@2x.png 2x" alt="Очень удобное кресло">
+                  </picture>
                 </div>
-                <ol class="carousel-indicators carousel__ind">
-                  <li data-target="#carouselPromo" data-slide-to="0" class="active carousel__rect"></li>
-                  <li data-target="#carouselPromo" data-slide-to="1" class="carousel__rect"></li>
-                  <li data-target="#carouselPromo" data-slide-to="2" class="carousel__rect"></li>
-                </ol>
+                <div class="carousel-item">
+                  <picture>
+                    <source type="image/webp" srcset="img/photo-chair@1x.webp 1x, img/photo-chair@2x.webp 2x">
+                    <img class="d-block w-100 page-header__img" src="img/photo-chair@1x.png" width="406" height="424" srcset="img/photo-chair@2x.png 2x" alt="Еще одно очень удобное кресло">
+                  </picture>
+                </div>
+                <div class="carousel-item">
+                  <picture>
+                    <source type="image/webp" srcset="img/photo-chair@1x.webp 1x, img/photo-chair@2x.webp 2x">
+                    <img class="d-block w-100 page-header__img" src="img/photo-chair@1x.png" width="406" height="424" srcset="img/photo-chair@2x.png 2x" alt="Крайнее очень удобное кресло">
+                  </picture>
+                </div>
               </div>
+              <ol class="carousel-indicators carousel__ind">
+                <li data-target="#carouselPromo" data-slide-to="0" class="active carousel__rect"></li>
+                <li data-target="#carouselPromo" data-slide-to="1" class="carousel__rect"></li>
+                <li data-target="#carouselPromo" data-slide-to="2" class="carousel__rect"></li>
+              </ol>
             </div>
           </div>
         </div>

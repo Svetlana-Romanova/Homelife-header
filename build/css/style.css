@@ -327,13 +327,13 @@ ul {
       background-image: none; } }
 
 .page-header__promo {
-  min-height: 660px;
-  padding-top: 100px; }
+  min-height: 660px; }
   @media (max-width: 991px) {
     .page-header__promo {
       min-height: 530px; } }
   @media (max-width: 767px) {
     .page-header__promo {
+      flex-direction: column;
       padding-top: 50px; } }
 
 .page-header__slogan {
@@ -346,6 +346,7 @@ ul {
       font-size: 36px; } }
   @media (max-width: 767px) {
     .page-header__slogan {
+      text-align: center;
       font-size: 26px; } }
 
 .page-header__text {
@@ -364,6 +365,9 @@ ul {
     .page-header__link {
       padding: 14px 0;
       width: 157px; } }
+  @media (max-width: 767px) {
+    .page-header__link {
+      margin: 0 auto; } }
 
 .carousel__ind {
   flex-direction: column;
@@ -376,7 +380,11 @@ ul {
       position: absolute;
       bottom: -40px; } }
 
-.navbar-brand img {
+.page-header__img {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.navbar__logo {
   width: 130px; }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
