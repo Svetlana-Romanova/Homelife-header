@@ -397,19 +397,26 @@ ul {
   .nav-link {
     font-size: 12px; } }
 
+.nav-item__phone {
+  padding: 0 8px; }
+  @media (max-width: 991px) {
+    .nav-item__phone {
+      padding: 0; } }
+
 .navbar__phone {
   color: #84a748;
   font-size: 20px;
   font-weight: 600; }
   @media (max-width: 991px) {
     .navbar__phone {
-      font-size: 13px; } }
+      font-size: 12px; } }
 
 .navbar__call {
   padding: 0 40px;
   font-size: 16px;
   font-weight: 600;
-  border: 1px solid #9bb968; }
+  border: 1px solid #9bb968;
+  padding: 15px 0; }
   @media (max-width: 991px) {
     .navbar__call {
       font-size: 13px; } }
