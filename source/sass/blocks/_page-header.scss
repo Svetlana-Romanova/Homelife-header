@@ -1,0 +1,74 @@
+.page-header {
+  background-color: $promo-background-color;
+  background-image: url("../img/bg-promo-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+  }
+}
+
+.page-header__promo {
+  min-height: 660px;
+  padding-top: 100px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 530px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 50px;
+  }
+}
+
+.page-header__slogan {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  letter-spacing: 0.96px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 26px;
+  }
+}
+
+.page-header__text {
+  background-color: $first-text-color;
+}
+
+.page-header__link {
+  display: block;
+  text-align: center;
+  padding: 21px 0;
+  width: 186px;
+  background-color: $first-text-color;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+
+  @media (max-width: $tablet-width) {
+    padding: 14px 0;
+    width: 157px;
+  }
+}
+
+.carousel__ind {
+  flex-direction: column;
+  position: relative;
+
+  .carousel__rect {
+    background-color: $lines-color;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: row;
+    position: absolute;
+    bottom: -40px;
+  }
+}
