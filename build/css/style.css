@@ -316,6 +316,9 @@ a {
 ul {
   list-style: none; }
 
+.modal-content {
+  background-color: #f5f8f1; }
+
 .page-header {
   background-color: #f5f8f1;
   background-image: url("../img/bg-promo-desktop.jpg");
